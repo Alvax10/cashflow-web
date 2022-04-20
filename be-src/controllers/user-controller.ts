@@ -1,4 +1,4 @@
-import { User } from "../models/user-mascot";
+import { User } from "../models/User";
 
 
 export async function getProfile(userId) {

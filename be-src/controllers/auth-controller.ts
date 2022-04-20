@@ -1,8 +1,8 @@
 import "dotenv/config";
-import { Auth } from "../models/Auth";
-import { User } from "../models/user-mascot";
 import * as crypto from "crypto";
 import * as jwt from "jsonwebtoken";
+import { User } from "../models/User";
+import { Auth } from "../models/Auth";
 
 // Transform the password to hash
 export function getSHA256ofString(text: string) {

@@ -1,6 +1,5 @@
 import { Auth } from "../models/Auth";
 import { User } from "../models/User";
-import { Mascot } from "../models/Mascot";
 import { sequelize } from "../models/database";
 
 // (async function() {
@@ -35,12 +34,4 @@ import { sequelize } from "../models/database";
 // })
 // .catch((err) => {
 //     console.log("Este es el error de sync User :", err);
-// });
-
-// Mascot.sequelize.sync({ force: true })
-// .then((res) => {
-//     console.log(res);
-// })
-// .catch((err) => {
-//     console.log("Este es el error de sync Mascot :", err);
 // });
