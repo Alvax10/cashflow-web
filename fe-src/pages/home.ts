@@ -63,7 +63,7 @@ class Home extends HTMLElement {
                 </form>
             </section>
             <section class="paying-section">
-                <h2 class="mini-title"> ¿Le ha interesado el curso?. Lléveselo a precio unico! </h2>
+                <h2 class="mini-title"> ¿Le ha interesado el curso? Lléveselo a precio unico! </h2>
                 <p class="subtitle2"> El curso incluye clases presenciales, no tiene que disponer del juego de mesa cashflow clases 2 veces a la semana de 25hs a 28hs hora de la madrugada. Clases y partidas durante 5 meses. </p>
                 <div class="comparing-prices">
                     <p class="first-price"> $100000000000 USD </p>
@@ -71,28 +71,29 @@ class Home extends HTMLElement {
                 </div>
                 <button class="button"> Quiero aprender! </button>
             </section>
+            <footer-component></footer-component>
         `;
 
         style.innerHTML = `
         .main-body {
             display: flex;
-            margin: 10px 10px 30px 10px;
+            margin-bottom: 40px;
             justify-content: space-around;
         }
         .text-section {
             display: flex;
-            margin-right: 20px;
-            align-items center;
+            padding-left: 10px;
             flex-direction: column;
         }
         .subtitle {
-            margin: 10px 0;
+            padding: 10px 0;
             max-width: 400px;
         }
         .cashflow-image-container {
             width: 330px;
+            margin: 20px;
             height: 270px;
-            margin-top: 40px;
+            padding-top: 20px;
             border-radius: 10px;
             background-color: #FBB11B;
         }
@@ -170,6 +171,7 @@ class Home extends HTMLElement {
             border: none;
             width: 312px;
             height: 50px;
+            cursor: pointer;
             font-size: 20px;
             align-self: center;
             text-align: center;

@@ -29,10 +29,10 @@ export class Header extends HTMLElement {
             </div>
             <div class="menu-nav">
                 <nav class="nav">
-                    <p class="contacto"> Contacto </p>
-                    <p class="servicio"> Servicio </p>
-                    <p class="dudas"> Dudas </p>
-                    <p class="sesion"> Cerrar sesión </p>
+                    <p class="nav-section contacto"> Contacto </p>
+                    <p class="nav-section servicio"> Servicio </p>
+                    <p class="nav-section dudas"> Dudas </p>
+                    <p class="nav-section sesion"> Cerrar sesión </p>
                 </nav>
             </div>
             <div class="menu-mobile">
@@ -47,10 +47,10 @@ export class Header extends HTMLElement {
                 </div>
                 <div class="menu-nav">
                     <nav class="nav">
-                        <p class="contacto"> Contacto </p>
-                        <p class="servicio"> Servicio </p>
-                        <p class="dudas"> Dudas </p>
-                        <p class="sesion"> Iniciar sesión </p>
+                        <p class="nav-section contacto"> Contacto </p>
+                        <p class="nav-section servicio"> Servicio </p>
+                        <p class="nav-section dudas"> Dudas </p>
+                        <p class="nav-section sesion"> Iniciar sesión </p>
                     </nav>
                 </div>
                 <div class="menu-mobile">
@@ -71,6 +71,7 @@ export class Header extends HTMLElement {
             .logo-img {
                 width: 215px;
                 height: 70px;
+                cursor: pointer;
                 border-radius: 10px;
                 margin: 15px 0 0 20px;
             }
@@ -84,6 +85,9 @@ export class Header extends HTMLElement {
                 background-color:#FBB11B;
                 text-decoration: underline;
                 justify-content: space-evenly;
+            }
+            .nav-section {
+                cursor: pointer;
             }
             .menu-mobile {
                 display: none;
